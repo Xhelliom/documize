@@ -7,4 +7,9 @@ RUN apt-get update -y \
 
 FROM gcr.io/distroless/base-debian10
 COPY --from=build-env /usr/local/bin/documize /
-ENTRYPOINT ["/documize"]
+
+ENV DOCUMIZESALT="somethingsupersecret" \
+DOCUMIZEDB="host=documize-postgres-s port=5432 sslmode=disable user=testuser password=testpassword123 dbname=testdb"
+
+ADD start.sh /usr/local/bin/
+ENTRYPOINT ["./start.sh"]
