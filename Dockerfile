@@ -12,4 +12,4 @@ ENV DOCUMIZESALT="somethingsupersecret" \
 DOCUMIZEDB="host=documize-postgres-s port=5432 sslmode=disable user=testuser password=testpassword123 dbname=testdb"
 
 ADD start.sh /usr/local/bin/
-ENTRYPOINT ["./start.sh"]
+ENTRYPOINT ["/usr/local/bin/start.sh"]
