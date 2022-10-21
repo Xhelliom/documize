@@ -1,3 +1,11 @@
+# This repo is made to build a documize docker image
+
+Command to build the image : 
+
+docker build -t xhelliom/documize:latest .
+
+docker push xhelliom/documize:latest
+
 # documize
 ---
 
