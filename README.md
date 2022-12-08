@@ -57,6 +57,8 @@ spec:
   selector:
     matchLabels:
       name: documize-ce-server-s
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
