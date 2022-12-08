@@ -44,7 +44,7 @@ To use the builded docker image, you can use the file include in the [_examples]
  `docker-compose -f _examples/docker-compose.yml`
 
 ## Kubernete YAML file:
-
+```YAML
 #Documize deployment
 apiVersion: apps/v1
 kind: Deployment
@@ -244,5 +244,5 @@ spec:
       middlewares:
         - name: https-redirectscheme
           namespace: default
-
+```
 
