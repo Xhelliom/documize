@@ -65,7 +65,7 @@ spec:
         name: documize-ce-server-s
     spec:
       containers:
-        - image: xhelliom/documize:latest
+        - image: xhelliom/documize-free:latest
           name: documize-ce-server-c
           args:
             - /usr/local/bin/documize
