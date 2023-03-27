@@ -2,9 +2,9 @@
 
 Command to build the image : 
 
-docker build -t xhelliom/documize:latest .
+docker build -t xhelliom/documize-free:latest .
 
-docker push xhelliom/documize:latest
+docker push xhelliom/documize-free:latest
 
 # documize
 ---
